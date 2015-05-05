@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="aestest" xd:componentRef="aestest" xd:initiationInterval="1" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
+  <xd:controlReg xd:name="control" xd:interfaceRef="S_AXI_AES_IO" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(inptext)" xd:originalName="inptext" xd:direction="in" xd:interfaceRef="S_AXI_AES_IO" xd:busTypeRef="axilite" xd:offset="0x14" xd:handshakeRef="ap_none" xd:dataWidth="128"/>
+  <xd:arg xd:name="*(key)" xd:originalName="key" xd:direction="in" xd:interfaceRef="S_AXI_AES_IO" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="128"/>
+  <xd:arg xd:name="*(outtext)" xd:originalName="outtext" xd:direction="out" xd:interfaceRef="S_AXI_AES_IO" xd:busTypeRef="axilite" xd:offset="0x3C" xd:handshakeRef="ap_vld" xd:dataWidth="128"/>
+  <xd:latencyEstimates xd:best-case="19" xd:worst-case="19" xd:average-case="19"/>
+  <xd:resourceEstimates xd:LUT="9257" xd:FF="3121" xd:BRAM="100" xd:DSP="0"/>
+</xd:acceleratorMap>
